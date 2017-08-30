@@ -14,8 +14,8 @@ export interface Campaign {
     candidate_name: string;
     candidate_party: string;
     candidate_position: string;
-    electionCycle: string;
-    electionYear: number;
+    election_cycle: string;
+    election_year: number;
     campaignSummary: CampaignSummary[];
 }
 

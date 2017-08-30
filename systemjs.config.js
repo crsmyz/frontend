@@ -28,7 +28,8 @@
       // other libraries
       'rxjs': 'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-      "ngx-dropdown": "node_modules/ngx-dropdown"
+      "ngx-dropdown": "npm:ngx-dropdown",
+      "d3": "npm:d3/build/d3.js"
 
     },
     // packages tells the System loader how to load when no filename and/or no extension

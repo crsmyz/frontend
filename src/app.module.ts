@@ -22,6 +22,8 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { campaignSlice } from './reducers/campaignreducer';
 
+import { BarGraph } from './directives/d3.directive';
+
 // import { CouncilListActions } from './common/enum';
 
 
@@ -38,7 +40,7 @@ import { campaignSlice } from './reducers/campaignreducer';
     ],
   declarations: [ AppComponent, HomepageComponent, AboutPageComponent, MayorListComponent,
   CouncilListComponent, CandidateDetailComponent,
-  FooterComponent, HeaderComponent, NotFoundComponent ],
+  FooterComponent, HeaderComponent, NotFoundComponent, BarGraph ],
   bootstrap:    [ AppComponent  ],
   providers: [{provide: APP_BASE_HREF, useValue : '/' }, LeverageApiProxy]
 })
