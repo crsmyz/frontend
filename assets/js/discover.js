@@ -3,6 +3,21 @@ var apiRoot = {
   dev: '/test-data'
 };
 
+var apiCampaigns = {
+  prod: 'http://api.leveragecampaignfinance.org',
+  dev: '/capaigns'
+}
+
+var apiCampaignsInfo = {
+  prod: 'http://api.leveragecampaignfinance.org',
+  dev: '/capaigns/info'
+}
+
+var apiCandidates = {
+  prod: 'http://api.leveragecampaignfinance.org',
+  dev: '/candidates/'
+}
+
 function setApiRoot (root, suffix) {
   return function getEndpoint (path) {
     return root + path + (suffix || '');

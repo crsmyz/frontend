@@ -3,10 +3,12 @@
   <head>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <nav class='navbar navbar-default' id='navbar'>
+    <nav class='navbar navbar-light bg-primary' id='navbar'>
       <section class='container-fluid'>
         <section class='navbar-header' id='nav-header-block'>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links-block" aria-expanded="false">
@@ -15,28 +17,46 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class='navbar-brand' href='discover.html'>Leverage</a>
+          <a class="navbar-brand" href='getting-started.html'>
+            <img src="assets\img\leverage_icon.gif" width="30" height="30" class="d-inline-block align-top" alt="">
+            Leverage
+          </a>
         </section>
         <section class='collapse navbar-collapse' id='nav-links-block'>
           <ul class='nav navbar-nav' id='nav-links'>
-            <li class='active'><a>Getting started</a></li>
-            <li><a href='discover.html'>Discover data</a></li>
-            <li><a href='about.html'>About Leverage</a></li>
-            <li><a href='feedback.html'>Feedback</a></li>
+            <li class="nav-item active-tab"><a href='getting-started.html'>Home</a></li>
+            <li class="nav-item">
+                <a type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Data
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li class="dropdown-item menu-item" type="button"><a href='candidatelist.html'>Candidates</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href='about.html'>About Leverage</a></li>
+            <li class="nav-item"><a href='feedback.html'>Feedback</a></li>
           </ul>
         </section>
       </section>
     </nav>
 
-    <!-- PAGE CONTENT -->
     <div class="container">
-      <h2>Candidate Listing</h2>
-      <p>The discovery page lists candidates whose financial data is available in Leverage. Click a candidate's name to view their campaign financial details.</p>
-
-      <h2>Candidate Detail Page</h2>
-      <p>The candidate detail page provides fundamental information about a candidate's campaign as well as relevant financial data.</p>
+    <div class="jumbotron">
+      <h1 class="display-3">Welcome to Leverage!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+      </p>
     </div>
-
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Leverage</span>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>

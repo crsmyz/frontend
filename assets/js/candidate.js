@@ -3,6 +3,11 @@ var apiRoot = {
   dev: '/test-data'
 };
 
+var apiCandidates = {
+  prod: 'http://api.leveragecampaignfinance.org',
+  dev: '/candidates/'
+}
+
 function setApiRoot (root, suffix) {
   return function getEndpoint (path) {
     return root + path + (suffix || '');
@@ -65,6 +70,7 @@ $(document).ready(function(){
           });
 
           chart.y1Axis
+          .axisLabel("Number of Contributions")
           .tickFormat(d3.format(',f'));
 
           chart.bars.forceY([0]);
