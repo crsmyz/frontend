@@ -16,6 +16,7 @@ BUILD_FILES   :=                                           \
 	$(BUILD_PREFIX)/css/style.css                            \
 	$(BUILD_PREFIX)/js/app.js                                \
 	$(BUILD_PREFIX)/index.html
+	$(BUILD_PREFIX)/raceListing.html
 
 site: $(BUILD_FILES)
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- PAGE CONTENT -->
+    <div class="container">
+      <h1>Current Political Races</h1>
+      <br>
+      <br>
+      <script type="text/template" id="race-listing-container">
+      <h3>Race for: {{ candidate_position }}</h3>
+      <div id="raceListing" class="card" style="width: 100%;">
+        <div class="card-body">
+          <h4 class="card-title">{{ name_first }}</h4>
+          <h6 class="card-subtitle mb-2 text-muted">{{ party_id }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{ total_money_donated }}</h6>
+          <a href="./candidate.html?id={{ candidate_id }}" class="card-link">Learn More</a>
+        </div>
+      </div>
+    </script>
+    <script src="/js/raceListing.js"></script>
+  </body>
+</html>
